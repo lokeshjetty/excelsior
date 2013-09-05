@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+        padding-top: 150px;
+        background-color: white;
+        }
+        .navbar-toggle {
+        float: left;
+        }
+        .navbar .nav >li >a {
+        min-height: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        }
+        .banner {
+        background-color: white;
+        }
+        .banner .nav >li >a{
+        color: rgba(10,10,10,1);
+        }
+        .banner >.navbar-header >.navbar-brand {
+        color: rgba(10,10,10,1);
+        }
+        .navbar-brand {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        }
+        .navbar-menu .nav >li >a{
+        color: rgba(235,235,235,1);
+        }
+        .dropdown-menu >li >a:hover {
+        background-color: rgba(60,60,60,1);
+        }
+        .navbar-menu .nav >li >a:hover, .navbar-menu .nav >li >a:focus, .navbar-menu .nav >li >a:active {
+        color: rgba(255,255,255,1);
+        background: rgb(109,109,109); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(109,109,109,1) 0%, rgba(83,83,83,1) 50%, rgba(64,64,64,1) 51%, rgba(90,90,90,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,109,109,1)), color-stop(50%,rgba(83,83,83,1)), color-stop(51%,rgba(64,64,64,1)), color-stop(100%,rgba(90,90,90,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(109,109,109,1) 0%,rgba(83,83,83,1) 50%,rgba(64,64,64,1) 51%,rgba(90,90,90,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(109,109,109,1) 0%,rgba(83,83,83,1) 50%,rgba(64,64,64,1) 51%,rgba(90,90,90,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(109,109,109,1) 0%,rgba(83,83,83,1) 50%,rgba(64,64,64,1) 51%,rgba(90,90,90,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(109,109,109,1) 0%,rgba(83,83,83,1) 50%,rgba(64,64,64,1) 51%,rgba(90,90,90,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+        }
+
+<!--/    .navbar-menu{
+        background-color: #e0e0e0;
+
+        } -->
+        .navbar-menu {
+        
+        margin-top: 93px;
+        min-height: 30px;
+        
+        background: rgb(139,139,139); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(139,139,139,1) 0%, rgba(113,113,113,1) 50%, rgba(94,94,94,1) 51%, rgba(120,120,120,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(139,139,139,1)), color-stop(50%,rgba(113,113,113,1)), color-stop(51%,rgba(94,94,94,1)), color-stop(100%,rgba(120,120,120,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(139,139,139,1) 0%,rgba(113,113,113,1) 50%,rgba(94,94,94,1) 51%,rgba(120,120,120,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(139,139,139,1) 0%,rgba(113,113,113,1) 50%,rgba(94,94,94,1) 51%,rgba(120,120,120,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(139,139,139,1) 0%,rgba(113,113,113,1) 50%,rgba(94,94,94,1) 51%,rgba(120,120,120,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(139,139,139,1) 0%,rgba(113,113,113,1) 50%,rgba(94,94,94,1) 51%,rgba(120,120,120,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
+        
+
+
+        }
+        
+        
+    </style>
+  </head>
+  <body>
+      <!--/<div><img src="img/AnandalayaLogo.gif" height="100"></div>-->
+      <container>
+        
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-menu" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>            
+        </div>
+
+      
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon glyphicon-user"></span> <b>Admission</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon glyphicon-check"></span> <b>Attendance</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> <b>Examination</b></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-book"></span> <b>Library</b></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon icon-inr"></span> <b>Fee</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon icon-group"></span> <b>Employee</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon icon-truck"></span> <b>Transport</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon glyphicon-flag"></span> <b>Events</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon glyphicon-th"></span> <b>Timetable</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon glyphicon-phone"></span> <b>SMS</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+          
+    </nav>
+    
+    <nav class="navbar navbar-default navbar-fixed-top banner" role="navigation">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+                    
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+            <table>
+                <tr>
+                    <td width="100" ><img src="img/140x80Company Logo.jpg" height="80"></td>
+                    <td width="400" align="right"><img src="img/AnandalayaLogo.gif" height="80"></td>
+                    <td width="20"></td>
+                    <td width="200" align="left"><b>ANANDALAYA</b><br><small>NDDB, Anand - 388001<br>Gujarat </small></td>
+                <tr>
+            </table>
+            <!--<img src="img/AnandalayaLogo.gif" height="80">-->   
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse navbar-ex2-collapse">
+            
+            <ul class="nav navbar-nav navbar-right">                
+                <li><a href="#"><span class="glyphicon glyphicon-bell"></span> <b>Notifications <span class="badge">5</span></b></a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown""><span class="glyphicon glyphicon-cog"></span> <b>Lokesh Jetty</b> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> <b>Profile</b></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-off"></span> <b>Logout</b></a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            
+          </div>
+            <!--/<form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </form>-->
+            
+          <!-- /.navbar-collapse -->
+
+    </nav>
+    
+    </container>
+    <center>
+    <!--<table class="table table-bordered table-hover" style="width:500px;">
+        <tr>
+            <th>S No.</th>
+            <th>Student id</th>
+            <th>Student Name</th>
+            <th>Status</th>
+            <th>Reason for absence</th>
+        </tr>
+        <tr class="success">
+            <td>1</td>
+            <td>AES/142</td>
+            <td>Abhilash Verma</td>
+            <td><input type="checkbox" name="AES142" value="P" checked="true"></td>
+            <td>-</td>
+        </tr>
+        <tr class="danger">
+            <td>2</td>
+            <td>AES/113</td>
+            <td>Abhishek Kumar</td>
+            <td><input type="checkbox" name="AES113" value="A"></td>
+            <td>-</td>
+        </tr>
+    </table> -->    
+    </center>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--/<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>-->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
